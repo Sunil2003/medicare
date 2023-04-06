@@ -3,6 +3,7 @@
 	padding: 0;
 
 	box-sizing: border-box;
+	/* font-family: 'Times New Roman', Times, serif; */
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	overflow: hidden;
 }
@@ -13,6 +14,7 @@ header{
 	background-image: url('bg.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+
 }
 
 .mainheader{
@@ -24,53 +26,46 @@ header{
 }
 
 .mainheader nav{
-	width: 100%;
-	max-width: 450px;
+	width: 450px;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 20px;
 }
 
 .mainheader nav a{
 	text-decoration: none;
 	color: black;
 	text-transform: uppercase;
-	margin: 10px;
 }
 
 .menubtn{
-	margin-right: 30px;
+	margin-right: 60px;
 }
 
 .mainheader button{
-	padding: 10px 20px;
+	padding: 10px 45px;
 	text-align: center;
 	font-size: 14px;
 	color: white;
 	border: none;
 	background-image: linear-gradient(to right, #649bff,#0070fa,#649bff);
 	border-radius: 10px;
+
 }
 
 main{
 	width: 100%;
 	display:flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	margin-top: 50px;
 }
 
 main .rigth-sec{
-	flex-basis: 50%;
-	padding: 0 30px;
+	padding-right: 70px;
 }
 
 main .left-sec{
-	flex-basis: 50%;
-	padding: 0 30px;
+	padding-left: 100px;
 }
 
 .left-sec h2{
@@ -78,7 +73,7 @@ main .left-sec{
 	text-transform: capitalize;
 	font-weight: lighter;
 	color: #242424;
-	margin-top: 30px;
+	margin-top: 150px;
 }
 .left-sec h1{
 	font-size: 55px;
@@ -92,7 +87,7 @@ main .left-sec{
 }
 
 .left-sec button{
-	padding: 15px 20px;
+	padding: 15px 45px;
 	text-align: center;
 	font-size: 14px;
 	color: white;
@@ -101,24 +96,3 @@ main .left-sec{
 	border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-	.mainheader nav{
-		max-width: 100%;
-		margin-top: 40px;
-	}
-	
-	main{
-		flex-direction: column;
-		margin-top: 30px;
-	}
-	
-	main .rigth-sec{
-		flex-basis: 100%;
-		padding: 0;
-	}
-	
-	main .left-sec{
-		flex-basis: 100%;
-		padding: 0;
-	}
-}
